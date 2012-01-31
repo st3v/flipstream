@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @feed.url %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @feed.name %>
+</p>
+
+<p>
+  <b>Description short:</b>
+  <%= @feed.description_short %>
+</p>
+
+<p>
+  <b>Description long:</b>
+  <%= @feed.description_long %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @feed.keywords %>
+</p>
+
+<p>
+  <b>Itunes:</b>
+  <%= @feed.itunes_id %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%= @feed.artist_id %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @feed.genre_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @feed.category_id %>
+</p>
+
+<p>
+  <b>Subcategory:</b>
+  <%= @feed.subcategory %>
+</p>
+
+<p>
+  <b>Release date:</b>
+  <%= @feed.release_date %>
+</p>
+
+<p>
+  <b>Crawl date:</b>
+  <%= @feed.crawl_date %>
+</p>
+
+<p>
+  <b>Is video:</b>
+  <%= @feed.is_video %>
+</p>
+
+<p>
+  <b>Explicit:</b>
+  <%= @feed.explicit %>
+</p>
+
+
+<%= link_to 'Edit', edit_feed_path(@feed) %> |
+<%= link_to 'Back', feeds_path %>

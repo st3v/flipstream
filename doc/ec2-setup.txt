@@ -1,0 +1,25 @@
+Fedora Image
+------------
+
+1. Development Tools
+	sudo yum install gcc make git
+
+2. MySQL
+	sudo yum install mysql-server mysql-libs mysql-devel
+	
+3. Ruby
+	sudo yum install ruby ruby-devel ruby-libs ruby-mode ruby-rdoc ruby-irb ruby-ri ruby-docs ruby-mysql
+	
+4. RybyGems
+	cd /tmp
+	git clone https://github.com/rubygems/rubygems.git
+	cd rubygems
+	sudo ruby setup.rb
+	cd ~
+	rm -rf /tmp/rubygems
+	
+5. Rails (will take forever!)
+	sudo gem install rails -V
+	
+6. Mongrel
+	sudo gem install mongrel mongrel_cluster

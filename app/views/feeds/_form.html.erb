@@ -1,0 +1,73 @@
+<%= form_for(@feed) do |f| %>
+  <% if @feed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@feed.errors.count, "error") %> prohibited this feed from being saved:</h2>
+
+      <ul>
+      <% @feed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description_short %><br />
+    <%= f.text_area :description_short %>
+  </div>
+  <div class="field">
+    <%= f.label :description_long %><br />
+    <%= f.text_area :description_long %>
+  </div>
+  <div class="field">
+    <%= f.label :keywords %><br />
+    <%= f.text_area :keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :itunes_id %><br />
+    <%= f.number_field :itunes_id %>
+  </div>
+  <div class="field">
+    <%= f.label :artist_id %><br />
+    <%= f.number_field :artist_id %>
+  </div>
+  <div class="field">
+    <%= f.label :genre_id %><br />
+    <%= f.number_field :genre_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br />
+    <%= f.number_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :subcategory %><br />
+    <%= f.number_field :subcategory %>
+  </div>
+  <div class="field">
+    <%= f.label :release_date %><br />
+    <%= f.datetime_select :release_date %>
+  </div>
+  <div class="field">
+    <%= f.label :crawl_date %><br />
+    <%= f.datetime_select :crawl_date %>
+  </div>
+  <div class="field">
+    <%= f.label :is_video %><br />
+    <%= f.check_box :is_video %>
+  </div>
+  <div class="field">
+    <%= f.label :explicit %><br />
+    <%= f.check_box :explicit %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

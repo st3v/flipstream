@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: MyString
+  name: MyString
+  description_short: MyText
+  description_long: MyText
+  keywords: MyText
+  itunes_id: 1
+  artist_id: 1
+  genre_id: 1
+  category_id: 1
+  subcategory: 1
+  release_date: 2012-01-29 07:56:27
+  crawl_date: 2012-01-29 07:56:27
+  is_video: false
+  explicit: false
+
+two:
+  url: MyString
+  name: MyString
+  description_short: MyText
+  description_long: MyText
+  keywords: MyText
+  itunes_id: 1
+  artist_id: 1
+  genre_id: 1
+  category_id: 1
+  subcategory: 1
+  release_date: 2012-01-29 07:56:27
+  crawl_date: 2012-01-29 07:56:27
+  is_video: false
+  explicit: false
